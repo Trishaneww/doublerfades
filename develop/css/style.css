@@ -1,0 +1,194 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    margin-top: 100px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.navbar {
+    display: flex;
+    margin-top: 0px;
+    justify-content: space-evenly;
+    background-color: black;
+    padding: 40px 40px;
+    position: relative;
+    list-style: none;
+}
+
+li {
+    margin-top: 20px;
+}
+
+.options {
+    text-decoration: none;
+    color:rgb(163, 163, 163);
+    font-size: 17px;
+    font-weight: bold;
+}
+
+div {
+    margin-left: 40px;
+    margin-right: 500px;
+    text-align: left;
+    display:flex;
+    flex-direction: column;
+}
+
+.navbar img {
+    width: 7rem;
+}
+
+#book-btn, #book-btn2 {
+  width: 150px;
+  text-align: center;
+  align-self: center;
+  position: relative;
+  background-color: whitesmoke;
+  border: 0.5px solid rgb(85, 79, 79);
+  color: rgb(85, 79, 79);
+  border-radius: 10px;
+  padding: 15px 15px;
+  margin-top: 40px;
+  text-decoration: none;
+  transition: background-color 200ms ease-in-out;
+}
+
+#book-btn2 {
+    margin-right: 330px;
+}
+
+
+#logo {
+    margin-top: 140px;
+    align-self: center;
+    position: relative;
+    width: 35%;
+}
+
+#barber {
+    height: 70%;
+    margin-top: 100px;
+    margin-left: 400px;
+    width: 50%;
+}
+
+/* The image lnked below is displayed as the background image */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main-content h1 {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.main-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+    background-image: url('https://wallpaperaccess.com/full/1371357.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.second-content {
+    display:flex;
+    background-color: whitesmoke;
+    height: 100vh;
+}
+
+.third-content {
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.third-content{
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+    background-image: url('https://buzzerdsbarbershop.com/wp-content/uploads/2019/05/MG_3193.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+} 
+
+.fourth-content {
+    display:flex;
+    flex-direction: column;
+    background-color: black;
+    height: 200vh;
+}
+
+footer {
+    margin: 50px 0px;
+    color:whitesmoke;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact {
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#facebook {
+    width: 80px;
+}
+
+#instagram {
+    width: 115px;
+}
+
+#mail {
+    width: 70px;
+}
+
+#book-btn:hover, #book-btn:focus, #book-btn2:hover, #book-btn2:focus {
+    background-color: rgb(85, 79, 79);
+    border: 0.5px solid whitesmoke;
+    color: whitesmoke;
+}
+
+.options:hover, .options:focus, .options:active {
+    color:whitesmoke;
+}
+
+@media (max-width:900px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar img {
+        align-self: center;
+        width: 7rem;
+    }
+    #book-btn {
+        width: 130px;
+    }
+    #logo {
+        width: 100%;
+    }
+}
